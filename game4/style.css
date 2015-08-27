@@ -1,0 +1,332 @@
+body
+{
+    height: 100%;
+	background-color: MintCream;
+}
+@font-face{
+    font-family: "KGTraditionalFractions";
+    src: url('fonts/KGTraditionalFractions.ttf');
+}
+
+@font-face{
+    font-family: "Square";
+    src: url('fonts/Square.ttf');
+}
+
+#outer
+{
+	position: relative;	
+	width: 26%;	
+	margin: 20px auto;
+}
+
+#field
+{
+	top: 75px;
+	position:absolute;
+	width:300px;
+	height:400px;
+	background-color:PaleTurquoise;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+#block
+{
+	font-family: "KGTraditionalFractions";
+    font-size: 350%;
+	position:absolute;
+	width:70px;
+	height:90px;
+	background-color:white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    border-style: solid;
+	border-color:white;
+	border-width:1px;
+    border-bottom-width: 5px;
+    border-bottom-color: Gold;	
+	vertical-align: middle;
+	line-height: 80px;  
+}
+
+#red
+{
+	color:LightCoral;
+	font-family: "KGTraditionalFractions";
+    font-size: 350%;
+	position:absolute;
+	width:70px;
+	height:90px;
+	background-color:white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    border-style: solid;
+	border-color:white;
+	border-width:1px;
+    border-bottom-width: 5px;
+    border-bottom-color: Gold;	
+	vertical-align: middle;
+	line-height: 80px;  
+}
+
+
+#one
+{
+	font-family: "KGTraditionalFractions";
+	color:white;
+    font-size: 350%;
+	position:absolute;
+	width:70px;
+	height:90px;
+	background-color:DeepSkyBlue;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    border-style: solid;
+	border-color:DeepSkyBlue;
+	border-width:1px;    
+	border-bottom-width: 5px;
+    border-bottom-color: SteelBlue;
+	
+	vertical-align: middle;
+	line-height: 80px;  
+}
+#two
+{
+	font-family: "KGTraditionalFractions";
+	color:white;
+    font-size: 350%;
+	position:absolute;
+	width:70px;
+	height:90px;
+	background-color:LightCoral;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    border-style: solid;
+	border-color:LightCoral;
+	border-width:1px;
+    border-bottom-width: 5px;
+    border-bottom-color: DarkRed;
+	
+	vertical-align: middle;
+	line-height: 80px;  
+}
+
+.next
+{
+	top: 495px;
+	left: 118px; 
+	position:absolute;
+	width:75px;
+	height:100px;
+}
+
+#reset
+{
+	background-image:url(images/reset2.png);
+	background-size: contain;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+
+	left: 390px; 
+	top: 237px;
+	position:absolute;
+	width:75px;
+	height:75px;
+	background-color:grey;
+    border-radius: 10px;
+	border-width:0px;
+	border-style: solid;
+    box-shadow: 2px 2px 5px #888888;
+	cursor:pointer;
+    border-bottom-width: 2px;
+    border-bottom-color: grey;
+}
+
+#reset:active
+{
+	top: 239px;
+	background-position:2px 0px;
+	box-shadow: 0px 0px 0px #888888;
+	border-bottom-width: 0px;
+	cursor:pointer;
+}
+
+#gameover
+{
+    text-align: center;
+	vertical-align: middle;
+	line-height: 700px;  
+	left: -10px;
+	top: -600px;
+	position:absolute;
+	width:315px;
+	height:670px;
+	background-color:white;
+    background:rgba(255,255,255,0.8);
+	z-index: 3;
+}
+
+#confetti
+{
+	background-image:url(images/confetti.gif);
+	background-size: contain;
+}
+
+#startgame
+{
+    text-align: center;
+	vertical-align: middle;
+	line-height: 700px;  
+	left: -10px;
+	top: -300px;
+	position:absolute;
+	width:315px;
+	height:830px;
+	background-color:white;
+    background:rgba(255,255,255,0.95);
+	z-index: 3;
+}
+
+#fake
+{
+	color: LightCoral;
+	position:absolute;
+	font-family: 'Square';
+    font-size: 400%;
+	top: -50px;
+	left:-5px;
+	width:75px;
+	height:30px;
+	text-shadow: 5px 5px 5px rgba(150, 150, 150, 1);
+}
+
+#threes
+{
+	color: DeepSkyBlue;
+	position:absolute;
+	font-family: 'Square';
+    font-size: 400%;
+	top: 0px;
+	left:100px;
+	width:75px;
+	height:30px;
+	text-shadow: 5px 5px 5px rgba(150, 150, 150, 1);
+}
+
+#arrows
+{
+	position:absolute;
+	top: 500px;
+	left:55px;
+	width:199px;
+	height:105px;
+	opacity: 0.5;
+	background-image:url(images/arrows.png);
+}
+
+#use
+{
+	color: LightCoral;
+	position:absolute;
+	font-family: 'Square';
+    font-size: 200%;
+	top: 250px;
+	left:115px;
+	width:75px;
+	height:5px;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+#usetext
+{
+	height:5px;
+}
+
+#ok
+{
+	background-image:url(images/checkmark.png);
+	background-size: contain;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	left: 116px; 
+	top: 677px;
+	position:absolute;
+	width:75px;
+	height:75px;
+	background-color:grey;
+    border-radius: 10px;
+	border-width:0px;
+	border-style: solid;
+    box-shadow: 2px 2px 5px #888888;
+	cursor:pointer;
+    border-bottom-width: 2px;
+    border-bottom-color: grey;
+}
+
+#ok:active
+{
+	top: 679px;
+	background-position:2px 0px;
+	box-shadow: 0px 0px 0px #888888;
+	border-bottom-width: 0px;
+	cursor:pointer;
+}
+
+#texttile
+{
+    color: grey;
+	font-family: 'Fredoka One', cursive;
+	top:300px;
+    font-size: 200%;
+	position:absolute;
+	width:315px;
+	height:100px;
+    text-align: center;
+    border-radius: 1px;
+    border-bottom-width: 5px;
+	vertical-align: middle;
+	line-height: 50px;
+    background:rgba(255,255,255,1.0);
+}
+
+#score
+{
+	color: grey;
+	font-family: 'Fredoka One', cursive;
+    font-size: 200%;
+	top: 0px;
+	right:200px;
+	position: absolute;
+	width:10px;
+	height:500px;
+	text-shadow: 3px 2px 4px rgba(150, 150, 150, 1);
+}
+
+#nexttext
+{
+	color: grey;
+	position:absolute;
+	font-family: 'Square', cursive;
+    font-size: 200%;
+	top: 490px;
+	left:20px;
+	width:75px;
+	height:75;
+	text-shadow: 3px 2px 4px rgba(150, 150, 150, 1);
+}
+
+#disclaimer
+{
+	color: black;
+	font-family:'Square';
+    font-size: 75%;
+	position:absolute;
+	bottom:0px;
+	right:10px;
+	text-shadow: 3px 2px 4px rgba(150, 150, 150, 1);
+}

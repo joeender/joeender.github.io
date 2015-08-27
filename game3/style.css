@@ -1,0 +1,822 @@
+body
+{
+	background-image:url(images/finished/background.png);
+	background-position:100px 0px;
+}
+
+.deck
+{
+	font-family: "OtakuRantBold";
+	font-size:40px;
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	background-image:url(images/finished/cardback.png);
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+	background-size: contain;
+	background-position:4px 0px;
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 160px;
+	width: 100px;
+	left:980;
+	bottom: 10px;
+	border-radius:5px;
+	z-index:-1;
+}
+
+#deckempty
+{
+	background-image:url(images/finished/clearback.png);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+#deckfull
+{	
+	background-image:url(images/finished/cardback.png);
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+.discard
+{
+	font-family: "lucida calligraphy";
+	text-shadow: 2px 2px 2px rgba(255, 255, 255, 255);
+	background-image:url(images/finished/clearback.png);
+	background-size: contain;
+	background-position:2px 0px;
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 160px;
+	width: 100px;
+	left:1080;
+	bottom: 10px;
+	border-radius:5px;
+	z-index:-1;
+}
+#discardempty
+{
+	background-image:url(images/finished/clearback.png);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+.info
+{
+	background-image:url(images/finished/pileofgold.png);
+	position: fixed;
+	height: 100px;
+	width: 350px;
+	left:650;
+	bottom:0;
+	border-radius:0px;
+	z-index: 6;
+}
+.turngold
+{
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	line-height:150px;
+	background-position:50px 20px;
+	font-size: 60px;
+	text-align:center;
+	font-family: "OtakuRantBold";
+	background-repeat: no-repeat;
+	background-image:url(images/finished/coin2.png);
+	position: fixed;
+	height: 150px;
+	width: 150px;
+	left:670;
+	bottom:-30;
+	border-radius:0px;
+	z-index: 0;
+}
+.reservegold
+{
+	text-align:center;
+	line-height:55px;
+	font-size: 40px;
+	font-family: "OtakuRantBold";
+	background-position:10px 0px;
+	background-image:url(images/finished/reservechest2.png);
+	background-size:contain;
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 60px;
+	width: 70px;
+	left:765;
+	bottom:10;
+	border-radius:0px;
+	z-index: 0;
+}
+.gemnumber
+{
+	font-size: 60px;
+	font-family: "OtakuRantBold";
+	background-repeat: no-repeat;
+	background-image:url(images/finished/gem2.png);
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	position: fixed;
+	height: 75px;
+	width: 80px;
+	left:850;
+	bottom:5px;
+	border-radius:0px;
+	z-index: 0;
+}
+.deckcount
+{
+	position: fixed;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: white;
+	height: 50px;
+	width: 100px;
+	left:1100;
+	bottom:0;
+	border-radius:0px;
+	z-index: 0;
+}
+
+.handpanel
+{
+	background-image:url(images/finished/handpanel.png);
+	position: fixed;
+	height: 150px;
+	width: 800px;
+	left:0;
+	bottom:0;
+	border-radius:0px;
+	z-index: 1;
+}
+
+.playpanel
+{
+	background-image:url(images/finished/playpanel.png);
+	background-position: 0px 0px;
+	background-repeat:no-repeat;
+	position: fixed;
+	height: 420px;
+	width: 1000px;
+	left:200px;
+	top:30;
+	border-radius:7px;
+	z-index: 2;
+}
+
+.buypanel
+{
+	background-position:0px -50px;
+	position: fixed;
+	background-image:url(images/finished/buypanel2.png);
+	overflow:visible;
+	height: 650px;
+	width: 920px;
+	right:-850px;
+	top: 0;
+	border-radius:0px;
+	z-index:3;
+}
+
+.cardstobuy
+{
+	position: absolute;
+	left: 25;
+	top:50;
+}
+.buypanelbutton
+{
+	cursor:pointer;
+	background-image:url(images/finished/buyarrow.png);
+	overflow: visible;
+	position: absolute;
+	height: 80;
+	width: 200;
+	left:-51;
+	top: -1;
+	border-radius:0px;
+}
+
+.buyslot1
+{
+	cursor:pointer;
+	left:10px;
+	top: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+
+.buyslot2
+{
+	cursor:pointer;
+	left:150px;
+	top: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+
+.buyslot3
+{
+	cursor:pointer;
+	left:290px;
+	top: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+
+.buyslot4
+{
+	cursor:pointer;
+	left:430px;
+	top: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+
+.buyslot5
+{
+	cursor:pointer;
+	left:570px;
+	top: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+
+.buyslot6
+{
+	cursor:pointer;
+	left:710px;
+	top: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+
+}
+.buyslot7
+{
+	cursor:pointer;
+	left:10px;
+	top: 240px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+
+}
+.buyslot8
+{
+	cursor:pointer;
+	left:150px;
+	top: 240px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+
+.buyslot9
+{
+	cursor:pointer;
+	left:290px;
+	top: 240px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+.buyslot10
+{
+	cursor:pointer;
+	left:430px;
+	top: 240px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+.buyslot11
+{
+	cursor:pointer;
+	left:570px;
+	top: 240px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+
+}
+.buyslot12
+{
+	cursor:pointer;
+	left:710px;
+	top: 240px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	border-radius:5px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+
+}
+.phasesbutton
+{	
+	font-size:90px;
+	background-image:url(images/finished/actiondone.png);
+	background-repeat:no-repeat;
+	font-family: "OtakuRantBold";
+	text-shadow: 2px 2px 2px rgba(255, 255, 255, 255);
+	background-position:-10px -10px;
+	cursor:pointer;
+	position: absolute;
+	height: 122px;
+	width: 430px;
+	left:20px;
+	top: -120px;
+	border-radius:0px;
+	z-index: -1;
+}
+#actiondone
+{
+	background-image:url(images/finished/actiondone.png);
+
+}
+
+#buydone
+{
+	background-image:url(images/finished/buydone.png);
+}
+
+#selectunit
+{
+	background-image:url(images/finished/selectunit.png);
+
+}
+
+#selectenemy
+{
+	background-image:url(images/finished/selectenemy.png);
+}
+
+#placeunit
+{
+	background-image:url(images/finished/placeunit.png);
+}
+
+.buycolumn
+{
+	background-image:url(images/finished/pointingarrow.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	cursor:pointer;
+	position: absolute;
+	height: 75;
+	width: 200;
+	left:530px;
+	top: 380px;
+	border-radius:0px;
+	z-index:0;
+}
+
+#buycolumngold
+{
+	font-family: "OtakuRantBold";
+	background-position:0px 30px;
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	font-size:40px;
+	background-image:url(images/finished/coin2.png);
+	overflow:visible;
+	background-repeat:no-repeat;
+	position: absolute;
+	line-height: 150px;
+	height: 150px;
+	width: 75px;
+	left:580px;
+	top: 350px;
+}
+
+#buycolumngem
+{
+	font-family: "OtakuRantBold";
+	background-position:-10px 30px;
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	font-size:40px;
+	background-image:url(images/finished/gem2.png);
+	overflow:visible;
+	background-repeat:no-repeat;
+	position: absolute;
+	line-height: 150px;
+	height: 150px;
+	width: 75px;
+	left:670px;
+	top: 350px;
+}
+
+.card
+{
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+	background-size: contain;
+	background-position:5px 0px;
+	background-repeat: no-repeat;
+	cursor:pointer;
+	position: fixed;
+	height: 160px;
+	width: 100px;
+	left:0px;
+	bottom: 10px;
+	border-radius:5px;
+	z-index:2;
+}
+
+@font-face{
+    font-family: "OtakuRantBold";
+    src: url('fonts/OtakuRantBold.ttf');
+}
+.iconprice
+{
+	font-family: "OtakuRantBold";
+	color:black;
+    background-repeat:no-repeat;
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	overflow: visible;
+	position: absolute;
+	height: 100px;
+	line-height: 100px;
+	width: 150px;
+	left:0;
+	bottom: 0;
+}
+.iconstats
+{    
+	text-align: center;
+	font-family: "OtakuRantBold";
+	color:black;
+    background-repeat:no-repeat;
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	overflow: visible;
+	position: absolute;
+	height: 100px;
+	line-height: 100px;
+	width: 150px;
+	left:0;
+	bottom: 0;
+}
+.iconstatshurt
+{    
+	text-align: center;
+	font-family: "OtakuRantBold";
+	color:red;
+    background-repeat:no-repeat;
+	text-shadow: 2px 1px 0px rgba(255, 255, 255, 0.50);
+	overflow: visible;
+	position: absolute;
+	height: 100px;
+	line-height: 100px;
+	width: 150px;
+	left:0;
+	bottom: 0;
+}
+
+/*Enemy Column*/
+.enemycolumn
+{
+	cursor:pointer;
+	position: absolute;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	height: 120px;
+	width: 120px;
+	top: 50px;
+	border-radius:5px;
+	z-index:-1;
+}
+#nextcolumn
+{
+	position: absolute;
+	left:10px;
+}
+
+#enemycolumn1
+{
+	left:140px;
+}
+
+#enemycolumn2
+{
+	left:270px;
+}
+
+#enemycolumn3
+{
+	left:400px;
+}
+#enemycolumn4
+{
+	left:530px;
+}
+#enemycolumn5
+{
+	left:660px;
+}
+#enemycolumn6
+{
+	left:790px;
+}
+#basecolumn
+{
+	background-image:url(images/finished/base2.png);
+	left:530px;
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+
+}
+#heart
+{
+	background-repeat:no-repeat;
+	font-family: "OtakuRantBold";
+	background-position:-3px 0px;
+	text-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+	font-size:60px;
+	background-image:url(images/finished/heart.png);
+	position:absolute;
+	left:605px;
+	top:25px;
+	height: 100px;
+	width: 100px;
+	z-index:0;
+}
+
+/*Unit Column*/
+.unitcolumn1
+{
+	background-image:url(images/finished/unitback.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:140px;
+	border-radius:5px;
+}
+.unitcolumn2
+{
+	background-image:url(images/finished/unitback.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:270px;
+	border-radius:5px;
+}
+
+.unitcolumn3
+{
+	background-image:url(images/finished/unitback.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:400px;
+	border-radius:5px;
+}
+.unitcolumn4
+{
+	background-image:url(images/finished/unitback.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:530;
+	border-radius:5px;
+}
+.unitcolumn5
+{
+	background-image:url(images/finished/unitback.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:660;
+	border-radius:5px;
+}
+.unitcolumn6
+{
+	background-image:url(images/finished/unitback.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:790;
+	border-radius:5px;
+}
+
+/*Cards*/
+#soldier
+{
+	background-image:url(images/finished/soldier.png);
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+#knight
+{
+	background-image:url(images/finished/knight.png);
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+
+}
+
+#medic
+{
+	background-image:url(images/finished/priest.png);
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+
+}
+#mage
+{
+	background-image:url(images/finished/mage.png);
+	box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.75);
+}
+#peasantlabor
+{
+	background-image:url(images/finished/peasantlabor.png);
+}
+
+#noblefavors
+{
+	background-image:url(images/finished/noblefavor.png);
+}
+#mercenarycontract
+{
+	background-image:url(images/finished/mercenarycontract.png);
+}
+#divinefavor
+{
+	background-image:url(images/finished/divinefavor.png);
+}
+#training
+{
+	background-image:url(images/finished/training.png);
+}
+#skillfulbureaucrat
+{
+	background-image:url(images/finished/skillfulbureaucrat.png);
+}
+#healingpotion
+{
+	background-image:url(images/finished/potion.png);
+}
+#fireball
+{
+	background-image:url(images/finished/fireball.png);
+}
+/* Support Column*/
+.supportcolumn1
+{
+	background-image:url(images/finished/supportback.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:10;
+	border-radius:5px;
+}
+.supportcolumn2
+{
+	background-image:url(images/finished/supportbacklocked.png);
+	cursor:pointer;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+	top: 180px;
+	left:530;
+	border-radius:5px;
+}
+#supportunlocked
+{
+	background-image:url(images/finished/supportback.png);
+}
+
+#empty
+{
+	background-color:white;
+}
+/* Enemy Units */
+.enemy
+{
+	cursor:pointer;
+	position: absolute;
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;
+	height: 120px;
+	width: 120px;
+	left: 300px;
+	bottom: 50px;
+	border-radius:5px;
+	box-shadow: 10px 8px 32px -2px rgba(0,0,0,0.75);
+	z-index = 0;
+}
+#bandit
+{
+	background-image:url(images/finished/bandit3.png);
+}
+
+#banditarcher
+{
+	background-image:url(images/finished/banditarcher.png);
+	background-size: contain;
+}
+#brokenknight
+{
+	background-image:url(images/finished/brokenknight.png);
+}
+
+#brute
+{
+	background-position:0px -15px;
+	background-image:url(images/finished/brute3.png);
+}
+#cursedknight
+{
+	background-image:url(images/finished/cursedknight.png);
+}
+#taintedpriest
+{
+	background-image:url(images/finished/taintedmage.png);
+}
+
+/* Animation */
+.damage
+{
+	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	position: absolute;
+	height: 120px;
+	width: 120px;
+	top: -1000px;
+	left: -1000px;
+	font-size:700%;
+	color: red;
+	border-radius:5px;
+	z-index:5;
+}
+.heal
+{
+	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	position: absolute;
+	height: 120px;
+	width: 120px;
+	top: -100px;
+	left: -100px;
+	font-size:700%;
+	color: green;
+	border-radius:5px;
+	z-index:5;
+}
+
+.mousehover
+{
+	left:0px;
+	top:0px;
+	height: 120px;
+	width: 120px;
+	position:absolute;
+	background-color:LightYellow;
+	z-index:10;
+}
+
+#tutor
+{
+	position:absolute;
+	z-index:5;
+}
+#tutorbox
+{
+	font-size:30;
+	height: 100px;
+	width: 300px;
+	border-radius:5px;
+	background-color:white;
+	box-shadow: 10px 8px 32px -2px rgba(0,0,0,0.75);
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
